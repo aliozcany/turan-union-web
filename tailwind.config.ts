@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				turan: {
+					teal: 'hsl(var(--turan-teal))',
+					light: 'hsl(var(--turan-teal-light))',
+					red: 'hsl(var(--turan-red))',
+					gold: 'hsl(var(--turan-gold))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
