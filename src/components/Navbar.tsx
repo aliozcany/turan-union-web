@@ -3,6 +3,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -14,47 +15,49 @@ const Navbar = () => {
   return (
     <nav className="bg-turan-teal shadow-lg border-b border-turan-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/aafe69ca-6636-4732-a1d3-ffa402adebbb.png" 
               alt="Dünya Turan Birliği" 
-              className="h-12 w-12"
+              className="h-14 w-14"
             />
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <Link to="/" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('home')}
-              </a>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/news" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('news')}
-              </a>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/about" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('about')}
-              </a>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/projects" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('projects')}
-              </a>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/events" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('events')}
-              </a>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/membership" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('membership')}
-              </a>
-              <Button 
-                variant="secondary" 
-                size="sm" 
-                className="bg-turan-red hover:bg-turan-red/90 text-white border-none"
-              >
-                {t('donate')}
-              </Button>
-              <a href="#" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              </Link>
+              <Link to="/donate">
+                <Button 
+                  variant="secondary" 
+                  size="sm" 
+                  className="bg-turan-red hover:bg-turan-red/90 text-white border-none"
+                >
+                  {t('donate')}
+                </Button>
+              </Link>
+              <Link to="/contact" className="text-white hover:text-turan-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {t('contact')}
-              </a>
+              </Link>
               
               {/* Language Toggle */}
               <Button
