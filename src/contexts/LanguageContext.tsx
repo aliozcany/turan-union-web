@@ -73,7 +73,29 @@ const translations = {
     messagePlaceholder: 'Mesajınızı yazın',
     sendMessage: 'Mesaj Gönder',
     workingHours: 'Çalışma Saatleri',
-    workingHoursDetail: 'Pazartesi - Cuma: 09:00 - 17:00\nCumartesi: 09:00 - 13:00'
+    workingHoursDetail: 'Pazartesi - Cuma: 09:00 - 17:00\nCumartesi: 09:00 - 13:00',
+    
+    // Admin Panel
+    adminPanel: 'Yönetim Paneli',
+    addNews: 'Haber Ekle',
+    addProject: 'Proje Ekle',
+    newsManagement: 'Haber Yönetimi',
+    projectManagement: 'Proje Yönetimi',
+    title: 'Başlık',
+    titlePlaceholder: 'Başlık girin',
+    description: 'Açıklama',
+    descriptionPlaceholder: 'Açıklama girin',
+    content: 'İçerik',
+    contentPlaceholder: 'İçerik yazın',
+    image: 'Resim',
+    imagePlaceholder: 'Resim URL\'si girin',
+    save: 'Kaydet',
+    cancel: 'İptal',
+    status: 'Durum',
+    selectStatus: 'Durum seçin',
+    ongoing: 'Devam Ediyor',
+    completed: 'Tamamlandı',
+    planning: 'Planlama Aşamasında'
   },
   en: {
     // Navbar
@@ -137,7 +159,29 @@ const translations = {
     messagePlaceholder: 'Write your message',
     sendMessage: 'Send Message',
     workingHours: 'Working Hours',
-    workingHoursDetail: 'Monday - Friday: 09:00 - 17:00\nSaturday: 09:00 - 13:00'
+    workingHoursDetail: 'Monday - Friday: 09:00 - 17:00\nSaturday: 09:00 - 13:00',
+    
+    // Admin Panel
+    adminPanel: 'Admin Panel',
+    addNews: 'Add News',
+    addProject: 'Add Project',
+    newsManagement: 'News Management',
+    projectManagement: 'Project Management',
+    title: 'Title',
+    titlePlaceholder: 'Enter title',
+    description: 'Description',
+    descriptionPlaceholder: 'Enter description',
+    content: 'Content',
+    contentPlaceholder: 'Write content',
+    image: 'Image',
+    imagePlaceholder: 'Enter image URL',
+    save: 'Save',
+    cancel: 'Cancel',
+    status: 'Status',
+    selectStatus: 'Select status',
+    ongoing: 'Ongoing',
+    completed: 'Completed',
+    planning: 'Planning Phase'
   }
 };
 
