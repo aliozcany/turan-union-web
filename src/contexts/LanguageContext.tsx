@@ -40,7 +40,40 @@ const translations = {
     footerContact: 'İletişim Bilgileri',
     phone: 'Telefon',
     email: 'E-posta',
-    address: 'Adres'
+    address: 'Adres',
+    
+    // Pages
+    aboutTitle: 'Hakkımızda',
+    aboutDescription: 'Dünya Turan Birliği Hakkında',
+    aboutContent: 'Dünya Turan Birliği, Turan coğrafyasındaki kardeş halklar arasında kültürel, ekonomik ve sosyal bağları güçlendirmek amacıyla kurulmuş bir sivil toplum kuruluşudur.',
+    
+    projectsTitle: 'Projelerimiz',
+    projectsDescription: 'Toplumsal kalkınma için yürüttüğümüz projeler',
+    
+    donateTitle: 'Bağış Yapın',
+    donateDescription: 'Projelerimize destek olun',
+    donateAmount: 'Bağış Miktarı',
+    donateButton: 'Bağış Yap',
+    
+    membershipTypes: 'Üyelik Türleri',
+    individualMembership: 'Bireysel Üyelik',
+    corporateMembership: 'Kurumsal Üyelik',
+    supporterMembership: 'Destekleyici Üyelik',
+    joinNow: 'Üye Ol',
+    
+    contactForm: 'İletişim Formu',
+    contactFormDescription: 'Bizimle iletişime geçmek için formu doldurun',
+    nameLabel: 'Ad Soyad',
+    namePlaceholder: 'Adınızı ve soyadınızı girin',
+    emailLabel: 'E-posta',
+    emailPlaceholder: 'E-posta adresinizi girin',
+    subjectLabel: 'Konu',
+    subjectPlaceholder: 'Mesajınızın konusunu girin',
+    messageLabel: 'Mesaj',
+    messagePlaceholder: 'Mesajınızı yazın',
+    sendMessage: 'Mesaj Gönder',
+    workingHours: 'Çalışma Saatleri',
+    workingHoursDetail: 'Pazartesi - Cuma: 09:00 - 17:00\nCumartesi: 09:00 - 13:00'
   },
   en: {
     // Navbar
@@ -71,7 +104,40 @@ const translations = {
     footerContact: 'Contact Information',
     phone: 'Phone',
     email: 'Email',
-    address: 'Address'
+    address: 'Address',
+    
+    // Pages
+    aboutTitle: 'About Us',
+    aboutDescription: 'About World Turan Union',
+    aboutContent: 'World Turan Union is a civil society organization established to strengthen cultural, economic and social ties among the brotherly peoples of the Turan geography.',
+    
+    projectsTitle: 'Our Projects',
+    projectsDescription: 'Projects we carry out for social development',
+    
+    donateTitle: 'Make a Donation',
+    donateDescription: 'Support our projects',
+    donateAmount: 'Donation Amount',
+    donateButton: 'Donate',
+    
+    membershipTypes: 'Membership Types',
+    individualMembership: 'Individual Membership',
+    corporateMembership: 'Corporate Membership',
+    supporterMembership: 'Supporter Membership',
+    joinNow: 'Join Now',
+    
+    contactForm: 'Contact Form',
+    contactFormDescription: 'Fill out the form to contact us',
+    nameLabel: 'Full Name',
+    namePlaceholder: 'Enter your full name',
+    emailLabel: 'Email',
+    emailPlaceholder: 'Enter your email address',
+    subjectLabel: 'Subject',
+    subjectPlaceholder: 'Enter the subject of your message',
+    messageLabel: 'Message',
+    messagePlaceholder: 'Write your message',
+    sendMessage: 'Send Message',
+    workingHours: 'Working Hours',
+    workingHoursDetail: 'Monday - Friday: 09:00 - 17:00\nSaturday: 09:00 - 13:00'
   }
 };
 

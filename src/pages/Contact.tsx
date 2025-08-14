@@ -22,28 +22,28 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="border-turan-light/20">
               <CardHeader>
-                <CardTitle className="text-turan-teal">İletişim Formu</CardTitle>
-                <CardDescription>Bizimle iletişime geçmek için formu doldurun</CardDescription>
+                <CardTitle className="text-turan-teal">{t('contactForm')}</CardTitle>
+                <CardDescription>{t('contactFormDescription')}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <Label htmlFor="name">Ad Soyad</Label>
-                  <Input id="name" placeholder="Adınızı ve soyadınızı girin" />
+                  <Label htmlFor="name">{t('nameLabel')}</Label>
+                  <Input id="name" placeholder={t('namePlaceholder')} />
                 </div>
                 <div>
-                  <Label htmlFor="email">E-posta</Label>
-                  <Input id="email" type="email" placeholder="E-posta adresinizi girin" />
+                  <Label htmlFor="email">{t('emailLabel')}</Label>
+                  <Input id="email" type="email" placeholder={t('emailPlaceholder')} />
                 </div>
                 <div>
-                  <Label htmlFor="subject">Konu</Label>
-                  <Input id="subject" placeholder="Mesajınızın konusunu girin" />
+                  <Label htmlFor="subject">{t('subjectLabel')}</Label>
+                  <Input id="subject" placeholder={t('subjectPlaceholder')} />
                 </div>
                 <div>
-                  <Label htmlFor="message">Mesaj</Label>
-                  <Textarea id="message" placeholder="Mesajınızı yazın" rows={6} />
+                  <Label htmlFor="message">{t('messageLabel')}</Label>
+                  <Textarea id="message" placeholder={t('messagePlaceholder')} rows={6} />
                 </div>
                 <Button className="w-full bg-turan-teal hover:bg-turan-teal/90 text-white">
-                  Mesaj Gönder
+                  {t('sendMessage')}
                 </Button>
               </CardContent>
             </Card>
@@ -51,14 +51,18 @@ const Contact = () => {
             <Card className="border-turan-light/20">
               <CardHeader>
                 <CardTitle className="text-turan-teal">{t('footerContact')}</CardTitle>
-                <CardDescription>Bize ulaşabileceğiniz kanallar</CardDescription>
+                <CardDescription>
+                  {t('language') === 'tr' ? 'Bize ulaşabileceğiniz kanallar' : 'Channels you can reach us'}
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
                   <h3 className="font-semibold text-turan-teal">{t('address')}</h3>
                   <p className="text-foreground">
-                    Örnek Mahallesi, Turan Caddesi No: 123<br/>
-                    Çankaya/Ankara
+                    {t('language') === 'tr' 
+                      ? 'Örnek Mahallesi, Turan Caddesi No: 123\nÇankaya/Ankara'
+                      : 'Sample District, Turan Street No: 123\nÇankaya/Ankara'
+                    }
                   </p>
                 </div>
                 <div>
@@ -70,10 +74,9 @@ const Contact = () => {
                   <p className="text-foreground">info@dunyaturanbirligi.org</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-turan-teal">Çalışma Saatleri</h3>
+                  <h3 className="font-semibold text-turan-teal">{t('workingHours')}</h3>
                   <p className="text-foreground">
-                    Pazartesi - Cuma: 09:00 - 17:00<br/>
-                    Cumartesi: 09:00 - 13:00
+                    {t('workingHoursDetail')}
                   </p>
                 </div>
               </CardContent>

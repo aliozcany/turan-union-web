@@ -10,33 +10,48 @@ const Membership = () => {
 
   const membershipTypes = [
     {
-      type: 'Bireysel Üyelik',
-      price: '100 TL/Yıl',
-      benefits: [
+      type: t('language') === 'tr' ? 'Bireysel Üyelik' : 'Individual Membership',
+      price: '100 TL/Year',
+      benefits: t('language') === 'tr' ? [
         'Etkinliklere öncelikli katılım',
         'Dernek yayınlarına erişim',
         'Aylık bülten',
         'Özel etkinlik davetleri'
+      ] : [
+        'Priority participation in events',
+        'Access to association publications',
+        'Monthly newsletter',
+        'Special event invitations'
       ]
     },
     {
-      type: 'Kurumsal Üyelik',
-      price: '500 TL/Yıl',
-      benefits: [
+      type: t('language') === 'tr' ? 'Kurumsal Üyelik' : 'Corporate Membership',
+      price: '500 TL/Year',
+      benefits: t('language') === 'tr' ? [
         'Tüm bireysel üyelik hakları',
         'Proje ortaklığı fırsatları',
         'Kurumsal tanıtım imkanı',
         'Özel danışmanlık hizmetleri'
+      ] : [
+        'All individual membership rights',
+        'Project partnership opportunities',
+        'Corporate promotion opportunities',
+        'Special consulting services'
       ]
     },
     {
-      type: 'Destekleyici Üyelik',
-      price: '1000 TL/Yıl',
-      benefits: [
+      type: t('language') === 'tr' ? 'Destekleyici Üyelik' : 'Supporter Membership',
+      price: '1000 TL/Year',
+      benefits: t('language') === 'tr' ? [
         'Tüm üyelik hakları',
         'Yönetim kurulu toplantılarına katılım',
         'Özel etkinlik düzenleme',
         'Dernek faaliyetlerinde söz hakkı'
+      ] : [
+        'All membership rights',
+        'Participation in board meetings',
+        'Special event organization',
+        'Voice in association activities'
       ]
     }
   ];
@@ -47,7 +62,7 @@ const Membership = () => {
       <div className="pt-8 pb-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-12 text-turan-teal">
-            {t('membership')}
+            {t('membershipTypes')}
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {membershipTypes.map((membership, index) => (
@@ -66,7 +81,7 @@ const Membership = () => {
                     ))}
                   </ul>
                   <Button className="w-full bg-turan-teal hover:bg-turan-teal/90 text-white">
-                    Üye Ol
+                    {t('joinNow')}
                   </Button>
                 </CardContent>
               </Card>
